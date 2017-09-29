@@ -4,7 +4,6 @@ $(window).ready(function() {
 
   $form.on('submit', function(e) {
     e.preventDefault();
-    console.log('bar');
 
     var jqxhr = $.ajax({
       url: url,
@@ -12,7 +11,15 @@ $(window).ready(function() {
       dataType: "json",
       data: $form.serialize()
     }).success(
-      console.log('success')
+      $('.js-submit').text('Success!').addClass('success')
+      // function() {
+      //       $('.js-submit').text('Success!').addClass('success');
+
+      //       var totalCheckboxes = $('input[type="checkbox"]').length,
+      //         checkedCheckboxes = $("input:checkbox:checked").length
+
+      //         console.log('You completed' + ' ' + checkedCheckboxes + ' ' + 'steps out of' + totalCheckboxes)
+      //     }
     );
   })
 });

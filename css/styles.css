@@ -71,3 +71,7 @@ h3 a {
 .mdl-button {
   margin-top: 40px;
 }
+
+button.js-submit.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored.success {
+    background-color: #2d9c2d;
+}
