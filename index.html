@@ -30,61 +30,61 @@
 		</header>
 		<main class="mdl-layout__content">
 			<div class="container">
-				<form action="#">
+				<form id="test-form">
 					<h4>Email Info</h4>
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Client Name...</label>
+						<input class="mdl-textfield__input" type="text" id="client_name">
+						<label class="mdl-textfield__label" name="client_name" for="client_name">Client Name...</label>
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Segment Name...</label>
+						<input class="mdl-textfield__input" type="text" id="segment_name">
+						<label class="mdl-textfield__label" name="segment_name" for="segment_name">Segment Name...</label>
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Mavenlink ID...</label>
+						<input class="mdl-textfield__input" type="text" id="mavenlink_id">
+						<label class="mdl-textfield__label" name="mavenlink_id" for="mavenlink_id">Mavenlink ID...</label>
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Requested By...</label>
+						<input class="mdl-textfield__input" type="text" id="requested_by">
+						<label class="mdl-textfield__label" name="requested_by" for="requested_by">Requested By...</label>
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Checklisted By...</label>
+						<input class="mdl-textfield__input" type="text" id="checklisted_by">
+						<label class="mdl-textfield__label" name="checklisted_by" for="checklisted_by">Checklisted By...</label>
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="sample1">
-						<label class="mdl-textfield__label" for="sample1">Deadline...</label>
+						<input class="mdl-textfield__input" type="text" id="deadline">
+						<label class="mdl-textfield__label" name="deadline" for="deadline">Deadline...</label>
 					</div>
 
 					<h4>Checklist</h4>
 					<div class="form__switch-group">
 						<h6>Images &amp; Graphics</h6>
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
-						  <input type="checkbox" id="switch-1" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="image_alt_text">
+						  <input type="checkbox" id="image_alt_text" name="image_alt_text" class="mdl-switch__input">
 						  <span class="mdl-switch__label"></span>
 						  <p class="switch__label">Do all images have appropriate alt-text?</p>
 						</label>
 
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
-						  <input type="checkbox" id="switch-2" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="image_jpg">
+						  <input type="checkbox" id="image_jpg" name="image_jpg" class="mdl-switch__input">
 						  <span class="mdl-switch__label"></span>
 						  <p class="switch__label">Is the image a .jpg (as opposed to a .png) or a gif?</p>
 						</label>
 
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
-						  <input type="checkbox" id="switch-3" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="image_text">
+						  <input type="checkbox" id="image_text" name="image_text" class="mdl-switch__input">
 						  <span class="mdl-switch__label"></span>
 						  <p class="switch__label">If there is text in the graphic is the spelling/grammar correct? Does the text in the graphic match the text in the body of the email?</p>
 						</label>
 						
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-4">
-						  <input type="checkbox" id="switch-4" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="image_links">
+						  <input type="checkbox" id="image_links" name="image_links" class="mdl-switch__input">
 						  <span class="mdl-switch__label"></span>
 						  <p class="switch__label">Do linked graphics point to the same landing page as the text links?</p>
 						</label>
@@ -92,24 +92,28 @@
 
 					<div class="form__switch-group">
 						<h6>Links &amp; Sourcing</h6>
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-5">
-							  <input type="checkbox" id="switch-5" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="link_correct">
+							  <input type="checkbox" id="link_correct" name="link_correct" class="mdl-switch__input">
 							  <span class="mdl-switch__label"></span>
 							  <p class="switch__label">Do all links point to the correct page?</p>
 						</label>
 
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-6">
-							  <input type="checkbox" id="switch-6" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="link_source_code">
+							  <input type="checkbox" id="link_source_code" name="link_source_code" class="mdl-switch__input">
 							  <span class="mdl-switch__label"></span>
 							  <p class="switch__label">Paste the source code in the Comments field to the right. Is the utm_source the client's name?</p>
 						</label>
 
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-7">
-							  <input type="checkbox" id="switch-7" class="mdl-switch__input">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="link_utm">
+							  <input type="checkbox" id="link_utm" name="link_utm" class="mdl-switch__input">
 							  <span class="mdl-switch__label"></span>
 							  <p class="switch__label">Is the utm_medium "email"?</p>
 						</label>
 					</div><!-- /.form__swith-group -->
+
+					<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+					  Submit
+					</button>
 				</form>
 			</div><!-- /.container -->
 		</main>
